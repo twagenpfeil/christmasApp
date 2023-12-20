@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Hab euch lieb.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <button id = 'button'> Press button to hear me.</button>
+
+    <audio id="myAudio">
+        <source src="Aufnahme.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        document.getElementById('button').addEventListener('click', pressButton);
+
+        function pressButton (){
+            var audio = document.getElementById('myAudio');
+            audio.play();
+        }
+    </script>
+
+</body>
+</html>
