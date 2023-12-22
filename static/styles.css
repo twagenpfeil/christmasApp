@@ -1,0 +1,27 @@
+button:hover {
+    color: red;
+    border: 10px;
+}
+
+button {
+    display: inline-block;
+    background-color: hsl(120, 2%, 25%);
+    border-radius: 10px;
+    border: 4px double #cccccc;
+    color: #eeeeee;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.audio-container{
+    position: absolute;
+    top: -9999999px
+}
