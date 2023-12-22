@@ -1,6 +1,6 @@
 import qrcode
 
-website_url = "http://localhost:5000/"
+website_url = "https://onrxatrmp8.execute-api.us-west-2.amazonaws.com/"
 
 qr = qrcode.QRCode(
     version=1, 
