@@ -4,21 +4,19 @@ button:hover {
 }
 
 button {
-    display: inline-block;
-    background-color: hsl(120, 2%, 25%);
-    border-radius: 10px;
-    border: 4px double #cccccc;
-    color: #eeeeee;
-    text-align: center;
-    font-size: 28px;
-    padding: 20px;
-    width: 200px;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
+    background-color: hsl(120, 0%, 46%);
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    color: black;
+    font-size: 16px;
+    padding: 16px 30px;
+    border: none;
     cursor: pointer;
-    margin: 5px;
+    border-radius: 5px;
+    text-align: center;
 }
 
 .audio-container{
@@ -26,20 +24,20 @@ button {
     top: -9999999px
 }
 
-body {
-    display: grid;
-    place-items: center;
-    height: 100vh;
+body{
+    padding: 0;
     margin: 0;
+    background-image: url('winterWonderLand.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
     overflow: hidden;
 }
-
-.snowflow {
+.snowflake {
     position: absolute;
     width: 10px;
     height: 10px; 
-    background-color: #f31f1f;
-    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: #fcf8f8;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     animation: fall linear infinite;
 }
 
@@ -48,4 +46,6 @@ body {
         transform: translateY(100vh);
     }
 }
+
+
 
