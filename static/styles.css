@@ -1,5 +1,5 @@
 button:hover {
-    color: red;
+    color: rgb(158, 188, 252);
     border: 10px;
 }
 
@@ -31,4 +31,21 @@ body {
     place-items: center;
     height: 100vh;
     margin: 0;
+    overflow: hidden;
 }
+
+.snowflow {
+    position: absolute;
+    width: 10px;
+    height: 10px; 
+    background-color: #f31f1f;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
+
